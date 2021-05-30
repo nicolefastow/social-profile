@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <title>Social Media Postings</title>
+</head>
+<body>
+    <div class="profile">
+            <div class="banner">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="user-info">
+                <h1>UserName</h1>
+                <h2 id="tweet-count">Posts: 0</h2>
+            </div>
+        <h3 class="post">Write a post:</h3>
+        <form>
+            <input type="text" class="tweet-input" maxLength="50">
+            <button class="tweet-btn" type="submit">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+        <h3>Posts by UserName:</h3>
+        <div class="tweet-container">
+            <ul class="tweet-list">
+            </ul>
+        </div>
+    </div>
+
+    <script  src="./app.js"></script>
+</body>
+</html>
