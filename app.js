@@ -33,7 +33,7 @@ function addTweet(e){
     tweetList.appendChild(tweetDiv);
     //clear tweet input
     tweetInput.value = '';
-    //
+    // post counter
     count += 1;
     document.getElementById('tweet-count').innerHTML = "Posts: " + count;
 }
@@ -48,6 +48,7 @@ function deleteLike(e) {
         tweet.addEventListener('transitionend', function(){
             tweet.remove();
         })
+        //post deletion count
         count -= 1;
         document.getElementById('tweet-count').innerHTML = "Posts: " + count;
     }
