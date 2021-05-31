@@ -5,7 +5,7 @@ const tweetList = document.querySelector('.tweet-list');
 let count = 0;
 //event listeners
 tweetBtn.addEventListener('click', addTweet);
-tweetList.addEventListener('click', deleteLike)
+tweetList.addEventListener('click', deleteLike);
 
 //functions
 function addTweet(e){
